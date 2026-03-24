@@ -83,6 +83,8 @@ In the chat, describe your app in plain language. You do not need a formal descr
 
 > "I want a customer account overview where an account manager can search for customers and see their recent notes and activity."
 
+> "I want a browser-based Tetris game with a canvas playfield, falling tetrominoes, line clearing, a score counter, and a next-piece preview."
+
 The agent will produce a draft spec and save it as `app-spec.md`.
 
 ---
