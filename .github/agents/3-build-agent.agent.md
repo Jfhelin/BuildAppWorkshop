@@ -1,7 +1,7 @@
 ---
 name: "3 Build Agent"
 description: "Block 3 — Use when implementing the app from app-spec.md, building the first working version of the app, coding the prototype, writing the initial codebase"
-tools: [read, edit, search, github, microsoft-learn]
+tools: [read, edit, search, github, microsoft-learn, execute]
 argument-hint: "Implement the app from app-spec.md"
 skills: []
 ---
@@ -44,4 +44,4 @@ When done, summarize:
 - what sample-data repo files or issues you used through GitHub MCP
 - what you implemented
 - what visual design work remains for Block 4
-- how to run the app, ask if the user wants you to start the app for them. If so, help with the correct command directly in the terminal and confirm the app is running before ending the handoff.
+- how to run the app, ask if the user wants you to start the app for them. If so, run the correct start command directly in the terminal and confirm the app is running before finishing.

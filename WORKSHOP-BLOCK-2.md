@@ -84,25 +84,12 @@ Use the stronger of the two reviews (or the best parts of both) to update the sp
    - Explicit about what data the app uses
    - Clear that there is no auth, no backend, no external services (or that any external API requires no key)
    - Scoped to things that can actually be built in 90 minutes
-
----
-
-## What to Look for Before Moving On
-
-- [ ] `app-spec.md` is more specific than when you started this block
-- [ ] The core workflow describes actual screens and interactions, not just goals
-- [ ] Constraints are explicitly stated in the spec
-- [ ] The data section names the specific data the app needs
-- [ ] No blocking issues remain from either review
-
 ---
 
 ## What You Learned in This Block
 
-- How to use a review agent to find spec problems before they become code problems
-- That different models have different strengths — specificity, risk detection, scope judgment
-- How to produce a tighter, more actionable spec by iterating on a review
-- Why the spec is worth spending time on before writing a single line of code
+- The core Copilot workflow repeated: **Copilot does the work → you review the output → you ask Copilot to fix it**. You did not edit `app-spec.md` directly — you described what needed to change and let the agent apply it. That pattern is the same whether you are writing a spec, reviewing code, or styling an app.
+- That **model choice is a real decision**. The same prompt sent to two different models produces different findings, different prioritisation, and different blind spots. Choosing a model is not a preference — it changes the output in ways that matter.
 
 ---
 

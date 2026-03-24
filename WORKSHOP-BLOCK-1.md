@@ -95,6 +95,8 @@ In the chat, describe your app in plain language. You do not need a formal descr
 
 The agent will produce a draft spec and save it as `app-spec.md`.
 
+> **Accepting Copilot's changes:** When the agent creates or edits a file, Copilot shows the changes with **Keep** and **Undo** buttons at the top of the file. You must select **Keep** to save the file. If you close the file or move on without selecting Keep, the changes are discarded and `app-spec.md` will be empty or missing. Do this for every file Copilot creates or edits throughout the workshop.
+
 ---
 
 ## Step 4: Review the Spec

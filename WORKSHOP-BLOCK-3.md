@@ -61,9 +61,9 @@ This is not just a build step — observing the agent's reasoning is part of wha
 
 ## Step 3: Open the App
 
-Once the agent finishes, open the app in your browser.
+Once the agent finishes, it will ask if you want it to start the app for you. Say yes — it will run the correct start command in the terminal and confirm the app is running.
 
-Depending on what the agent built, either:
+If you prefer to start it yourself:
 
 - Open `index.html` directly in the browser (drag it in, or right-click > Open With), or
 - Run the single start command the agent provides (typically `npm run dev` or `npx serve`)

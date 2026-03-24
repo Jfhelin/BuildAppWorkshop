@@ -68,7 +68,11 @@ The grounding chain — **skill → MCP → guidelines repo → code changes** �
 
 ## Step 3: Review the Styled App
 
-Reload the app in your browser and compare it to Block 3.
+Once Copilot finishes, ask it to start the app if it is not already running:
+
+> "Start the app so I can review the design."
+
+Copilot will run the correct start command in the terminal. Then reload the app in your browser and compare it to Block 3.
 
 Look for:
 
