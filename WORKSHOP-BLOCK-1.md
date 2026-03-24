@@ -1,5 +1,7 @@
 # Block 1: Spec Agent
 
+> **Reading this in VS Code?** Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac) to open Markdown preview.
+
 **Goal:** Turn your app idea into a clear, reviewed draft spec that is ready for a build agent.
 
 This block is about thinking before building. A good spec saves you from halfway-built apps and late pivot decisions. The Spec Agent will help you structure your idea — but *you* need to iterate on it until it actually describes what you want.

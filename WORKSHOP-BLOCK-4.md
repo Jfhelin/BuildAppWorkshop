@@ -1,5 +1,7 @@
 # Block 4: Design Agent
 
+> **Reading this in VS Code?** Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac) to open Markdown preview.
+
 **Goal:** Apply the Zava design language to your app — grounded in real brand guidance retrieved from a GitHub repository — without changing anything about how the app works.
 
 Estimated time: **15–20 minutes**

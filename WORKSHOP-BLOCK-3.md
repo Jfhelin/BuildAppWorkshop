@@ -1,5 +1,7 @@
 # Block 3: Build Agent
 
+> **Reading this in VS Code?** Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac) to open Markdown preview.
+
 **Goal:** Build a working first version of your app — grounded in real technical documentation and realistic sample data — that runs entirely in the browser with no setup required.
 
 Estimated time: **25–30 minutes**

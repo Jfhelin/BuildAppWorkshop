@@ -1,5 +1,8 @@
 # GitHub Copilot Workshop
 
+> **Reading this in VS Code?** Open it in Markdown preview for the best experience.
+> Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac), or click the preview icon (split-pane button) in the top-right corner of the editor.
+
 This repository is the working space for the workshop. Open it in `VS Code`, use the included agents and skill, and build your app directly here.
 
 ## Start Here

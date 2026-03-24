@@ -1,5 +1,7 @@
 # Block 2: Spec Review Agent
 
+> **Reading this in VS Code?** Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac) to open Markdown preview.
+
 **Goal:** Stress-test your spec before building. Find the gaps, ambiguities, and risks that would slow down or break the build — and apply the fixes directly to `app-spec.md` before handing it to the Build Agent.
 
 This block also introduces one of the most useful Copilot insights: **different models produce meaningfully different outputs for the same task**. You will run the same review twice with two different models and compare the results.

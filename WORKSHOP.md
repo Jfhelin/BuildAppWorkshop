@@ -1,5 +1,8 @@
 # Workshop Guide
 
+> **Reading this in VS Code?** Open it in Markdown preview for the best experience.
+> Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac), or click the preview icon (split-pane button) in the top-right corner of the editor.
+
 Welcome to the **Build App Workshop**. In this session you will plan, build, and polish a working web app entirely inside this repository — using GitHub Copilot agents, MCP connections, and the Zava design skill.
 
 You do not need prior coding experience. Copilot does the heavy lifting. Your job is to describe what you want, review what comes back, and keep refining until it is right.
