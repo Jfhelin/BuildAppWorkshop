@@ -1,6 +1,6 @@
 # Block 3: Build Agent
 
-> **Reading this in VS Code?** Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac) to open Markdown preview.
+> **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width.
 
 **Goal:** Build a working first version of your app — grounded in real technical documentation and realistic sample data — that runs entirely in the browser with no setup required.
 

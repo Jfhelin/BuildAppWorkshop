@@ -1,7 +1,8 @@
 # Workshop Guide
 
-> **Reading this in VS Code?** Open it in Markdown preview for the best experience.
-> Press `Ctrl+Shift+V` (Windows / Linux) or `Cmd+Shift+V` (Mac), or click the preview icon (split-pane button) in the top-right corner of the editor.
+> **Reading this in VS Code?** Open this file in Markdown preview for the best experience.
+> Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux).
+> The preview opens as a split panel — drag its tab to the centre of the screen to make it full-width.
 
 Welcome to the **Build App Workshop**. In this session you will plan, build, and polish a working web app entirely inside this repository — using GitHub Copilot agents, MCP connections, and the Zava design skill.
 
@@ -48,7 +49,6 @@ These apply across all four blocks:
 
 - **No auth.** The app will not have login screens or user accounts.
 - **No backend.** Everything runs in the browser — no server to spin up, no database to configure.
-- **No external APIs at runtime.** All data is local or bundled. Nothing requires network access to demo.
 - **Stay in the repo.** Create and edit files directly in this repository.
 - **Keep it demoable.** If it cannot be shown in 90 minutes, it is out of scope.
 
