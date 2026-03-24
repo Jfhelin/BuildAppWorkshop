@@ -24,19 +24,9 @@ This repository is the working space for the workshop. Open it in `VS Code`, use
 
 ## What Should Already Be Ready
 
-Your workshop environment should already have:
+Your workshop environment should already have GitHub Copilot enabled in VS Code.
 
-- GitHub Copilot in VS Code
-
-If any of those are missing, ask the trainer before starting the blocks.
-
-## Files You Will Create
-
-Create these in the repo root during the workshop:
-
-- `app-spec.md`
-- `spec-review-a.md`
-- `spec-review-b.md`
+If that is missing, ask the trainer before starting the blocks.
 
 ## Workshop Goal
 

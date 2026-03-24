@@ -125,7 +125,7 @@ If the agent broke something functional, tell it:
 
 You have now built a complete, styled, browser-based app using:
 
-- A spec produce by an agent and refined through iteration
+- A spec produced by an agent and refined through iteration
 - A review that surfaced and fixed spec problems before they became code problems
 - A build grounded in real technical documentation and realistic sample data
 - A design pass driven by a skill and a live brand guidelines repository
@@ -136,7 +136,7 @@ Before you finish, make sure you can answer these:
 2. **Why does model choice matter?** What was different between the two review outputs?
 3. **What did MCP add to the build?** What would the agent have done differently without it?
 4. **What did the skill do in the design step?** What changed because of it versus what the agent would have done on its own?
-5. **Why are different agents useful?** What would have gone wrong if one agent did everything?
+5. **What is the difference between a skill and a custom agent?** What did the skill do that a custom agent would have done differently — or couldn't do at all?
 
 ---
 
