@@ -69,7 +69,6 @@ To confirm they are running on the day:
 
 - Bring your laptop with VS Code open and the workshop repository loaded
 - Have your GitHub account signed in to Copilot before you arrive
-- We start promptly at **[TIME]** — aim to arrive 10 minutes early if you can
 
 No other prep is needed. We will walk through everything together in the session.
 

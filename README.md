@@ -27,11 +27,6 @@ This repository is the working space for the workshop. Open it in `VS Code`, use
 Your workshop environment should already have:
 
 - GitHub Copilot in VS Code
-- Copilot CLI
-- `Microsoft Learn MCP`
-- `GitHub MCP`
-- the `zava-designer` skill installed and available from the start
-- access through GitHub MCP to `github.com/Jfhelin/zava-design-guidelines`
 
 If any of those are missing, ask the trainer before starting the blocks.
 
@@ -46,3 +41,7 @@ Create these in the repo root during the workshop:
 ## Workshop Goal
 
 Use one continuous flow to learn how `agents`, `spec quality`, `model selection`, `MCP grounding`, and `skills` change the way GitHub Copilot helps you build.
+
+## Ready to Begin?
+
+Open [WORKSHOP.md](WORKSHOP.md) to get started with the workshop.
