@@ -42,23 +42,7 @@ Then install the **GitHub Copilot** extension:
 2. Type a simple question like "What is a variable?" and confirm you get a response
 3. Click the **model picker** at the bottom of the chat panel and confirm you can see **Claude Sonnet 4.6** in the list — select it as your default model for the workshop
 
-### 3. Configure GitHub MCP
-
-GitHub MCP lets Copilot retrieve content from GitHub repositories at authoring time. We use it to ground the app build with real sample data and design guidelines.
-
-To configure it:
-1. Open VS Code Settings (`Ctrl+,` / `Cmd+,`)
-2. Search for **MCP** and follow the setup steps for **GitHub MCP**
-
-If you are unsure how to set this up, [follow the official guide](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) or ask your IT contact. Your GitHub account credentials are all that is needed.
-
-### 4. Configure Microsoft Learn MCP
-
-This MCP connection lets Copilot consult official Microsoft documentation when making technical decisions.
-
-Set it up the same way as GitHub MCP, selecting **Microsoft Learn** as the source. If your environment does not support it, let us know before the session — it is used in Block 3 but is not strictly required to participate.
-
-### 5. Clone the workshop repository
+### 3. Clone the workshop repository
 
 The workshop takes place entirely inside a GitHub repository. You will receive the repository link separately — clone it to your local machine before the session:
 
@@ -67,6 +51,17 @@ git clone [WORKSHOP REPO URL]
 ```
 
 Open the cloned folder in VS Code.
+
+### 4. Start the MCP servers
+
+The workshop repository includes pre-configured MCP connections — you do not need to set them up manually. When you open the repository in VS Code for the first time, VS Code will detect the MCP servers and ask you to trust them. Select **Trust** for both.
+
+To confirm they are running on the day:
+1. Open the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+2. Scroll to **MCP SERVERS - INSTALLED**
+3. Confirm both `github` and `microsoft-learn` show a green running indicator — if not, click the start button next to each
+
+> This requires your GitHub account to be signed in to VS Code. If you are not already signed in, do so via **Accounts** in the bottom-left of the VS Code window.
 
 ---
 

@@ -32,24 +32,25 @@ The Spec Review Agent finds these problems *before* the Build Agent runs into th
    > "Review app-spec.md and produce a critique."
 
 4. The agent will review `app-spec.md` using a structured rubric and produce a report
-5. When it finishes, **rename or save the review output as `spec-review-a.md`**
+5. When it finishes, **review the output `spec-review-<model-used>.md`**
 
-> **Note:** The agent saves the review automatically. Check which file it created and rename it if needed.
 
 ---
 
 ## Step 2: Switch Models and Run the Review Again
 
-1. In the Copilot Chat model picker, switch to a **different model** than the one you just used
+1. In the Copilot Chat model picker, switch to a **different model** than the one you just used — try a model from a different provider for the most contrast. Good options:
+   - **Google Gemini** (e.g. Gemini 2.5 Pro) — strong at structured analysis and spotting scope creep
+   - **OpenAI GPT-5.4** — well-rounded; tends to be thorough on acceptance criteria gaps
+   - Any other model available in the picker you have not used yet
 2. Send the exact same message again:
 
    > "Review app-spec.md and produce a critique."
 
-3. Save this output as `spec-review-b.md`
 
 ---
 
-## Step 3: Compare the Two Reviews
+## Step 3: Compare the different Reviews
 
 Read both reviews side by side and look for:
 
@@ -76,7 +77,7 @@ Use the stronger of the two reviews (or the best parts of both) to update the sp
 
    Or, if you want to guide which findings get applied:
 
-   > "Apply findings 1, 2, and 4 from spec-review-a.md and update app-spec.md."
+   > "Apply findings 1, 2, and 4 from spec-review-<model-name>.md and update app-spec.md."
 
 2. Review `app-spec.md` before moving on. It should now be:
    - More specific about the main screen and user interactions

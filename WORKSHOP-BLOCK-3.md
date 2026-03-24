@@ -12,7 +12,7 @@ Estimated time: **25–30 minutes**
 
 The Build Agent reads `app-spec.md` and implements the app directly in this repository. Before making technical choices, it grounds its decisions in **Microsoft Learn documentation** retrieved through MCP — so framework choices, API patterns, and implementation approaches are based on real, current guidance rather than the model's training data alone.
 
-It also retrieves **realistic sample data** from [Jfhelin/zava-sample-data](https://github.com/Jfhelin/zava-sample-data) through GitHub MCP, so your app has real-looking content from the start instead of obvious placeholder filler.
+If your app is based on one of the sample data scenarios, it also retrieves **realistic sample data** from [Jfhelin/zava-sample-data](https://github.com/Jfhelin/zava-sample-data) through GitHub MCP, so your app has real-looking content from the start instead of obvious placeholder filler. If your app uses a different data source (a public API, a game state, or data you define yourself), this step is skipped.
 
 ---
 
@@ -32,8 +32,9 @@ This is **authoring-time grounding only** — the built app itself does not call
 ## Step 1: Start the Build Agent
 
 1. Open **Copilot Chat** and switch to **Agent mode**
-2. Select the **3 Build Agent**
-3. Send this message:
+2. **Switch to a strong coding model.** In Block 2 you may have switched to a model optimised for analysis. For the build step you want a model that excels at writing code — **Claude Opus 4.6** or **GPT-5.4** are good choices. Use the model picker at the bottom of the chat panel to switch before continuing.
+3. Select the **3 Build Agent**
+4. Send this message:
 
    > "Implement the app from app-spec.md."
 
@@ -52,7 +53,7 @@ While the agent works, pay attention to:
 - **Which MCP sources it queries** — what documentation does it reach for, and why?
 - **Which sample-data files it retrieves** — does it match the data to your spec?
 - **What technical decisions it makes** — framework, data handling, file structure
-- **What it says it did not do** — the agent should explicitly note what it left for the Design Agent
+- **What it says it did not do** — the agent should explicitly note what visual design work it left for Block 4
 
 This is not just a build step — observing the agent's reasoning is part of what you are here to learn.
 
@@ -97,19 +98,9 @@ The agent will provide a summary at the end listing:
 - What Microsoft Learn MCP guidance it used
 - Which sample-data files it retrieved
 - What it built
-- What remains for the Design Agent
+- What visual design work remains for Block 4
 
 Read this summary. It tells you what grounding actually influenced the output, which is useful for understanding what MCP adds vs. what the model would have done on its own.
-
----
-
-## What to Look for Before Moving On
-
-- [ ] The app opens in a browser with no setup beyond a single command or file open
-- [ ] The app contains realistic data (not placeholder text)
-- [ ] The core workflow from `app-spec.md` is functional
-- [ ] The app has no auth, no backend, no external calls
-- [ ] Design is minimal — the Zava styling will come in Block 4
 
 ---
 
@@ -118,7 +109,8 @@ Read this summary. It tells you what grounding actually influenced the output, w
 - How MCP lets agents ground technical decisions in live documentation rather than training data alone
 - How sample data repositories give agents a shared, controlled source of realistic content
 - That the build output should be verified against the spec — agents drift without feedback
-- Why keeping design minimal in this phase makes the design step more impactful
+- That modern coding models can produce a working, multi-feature app from a written spec in minutes — the bottleneck is the quality of the spec, not the speed of the code generation
+- That a clear, specific spec translates almost directly into working code, while a vague spec produces working code that does the *wrong thing* — the model follows what you wrote, not what you meant
 
 ---
 

@@ -63,6 +63,14 @@ If you have a completely different idea, use it — just make sure it fits the g
 
 ## Step 2: Open the 1 Spec Agent in Copilot Chat
 
+### What is a custom agent?
+
+A **custom agent** is a version of Copilot that has been pre-configured with a specific role, set of instructions, and allowed tools. Instead of a blank general-purpose chat, you get an assistant that already knows its job — in this case, turning your app idea into a structured spec.
+
+Agents are defined as files in the repository (`.github/agents/`). This one tells Copilot to act as a spec writer, follow a particular template, and save the result to `app-spec.md`. You are not prompting a generic model — you are invoking a workflow that someone has already designed and tested.
+
+> Want to see how it works? Open [`.github/agents/1-spec-agent.agent.md`](.github/agents/1-spec-agent.agent.md) to read its instructions. You can also read more about custom agents in the [VS Code documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agents).
+
 1. Open **Copilot Chat** in VS Code (press `Ctrl+Alt+I` / `Cmd+Shift+I`, or click the Copilot icon in the sidebar)
 2. In the chat input, switch to **Agent mode** using the mode selector at the bottom of the chat panel
 3. Select the **1 Spec Agent** from the agent picker
@@ -98,6 +106,7 @@ Read through `app-spec.md`. A good spec at this stage should have:
 - [ ] **Core workflow** — what the user actually does, step by step
 - [ ] **Success criteria** — how you know the app is working
 - [ ] **Constraints** — what the app does *not* do (no auth, no backend, local only)
+- [ ] **Platform assumptions** — confirms the app runs in the browser and opens without deployment
 - [ ] **Minimum data** — what data the app needs and where it comes from
 - [ ] **Non-goals** — features explicitly out of scope
 - [ ] **Implementation note** — a short hint for the build agent
@@ -143,10 +152,12 @@ If you cannot answer those confidently, spend more time in Step 5.
 
 ## What You Learned in This Block
 
-- How to describe an app idea precisely enough for a build agent to act on it
-- Why constraints (no auth, no backend, local only) belong in the spec — not just in your head
-- How to use a spec agent iteratively rather than accepting the first output
-- Why a clear spec is faster than fixing a misbuilt app
+- What a **custom agent** is — a pre-configured Copilot persona with a specific role, instructions, and tools, defined as a file in the repository
+- That custom agents let you invoke a **designed workflow**, not just a general chat — the 1 Spec Agent already knew what a good spec looks like before you typed a word
+- How to open **Copilot Chat**, switch to **Agent mode**, and select a custom agent from the agent picker
+- That Copilot agents can **create and update files** in your repository on your behalf — you did not write or edit `app-spec.md` manually
+- How to **iterate with Copilot** by sending follow-up messages instead of editing documents yourself
+- That the right workflow is: *describe what you want → review Copilot's output → ask for changes* — not crafting the perfect prompt upfront
 
 ---
 

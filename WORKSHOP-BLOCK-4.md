@@ -1,4 +1,4 @@
-# Block 4: Design Agent
+# Block 4: Zava Design Skill
 
 > **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width.
 
@@ -8,13 +8,17 @@ Estimated time: **15–20 minutes**
 
 ---
 
-## What the Design Agent Does
+## What Happens in This Block
 
-The Design Agent takes the working but unstyled app from Block 3 and applies the Zava design system. Zava is the company-wide design language for all apps. You do not need to specify colors, typography, or layout rules — the agent retrieves all of that from the `Jfhelin/zava-design-guidelines` repository through GitHub MCP.
+This block has no custom agent. You stay in default Agent mode and send a plain prompt. What makes this block different is what fires automatically underneath: the `zava-designer` **skill**.
+
+A skill is a set of rules and retrieval instructions that Copilot activates automatically when it detects relevant work. The `zava-designer` skill is configured to fire on any UI work — building, styling, or improving any interface — without you having to select it or mention Zava. Copilot reads the skill, knows what design system to apply and where to retrieve the brand guidance, and acts on it.
+
+This block is about observing that moment. You will send a simple prompt and watch the skill activate, retrieve real brand files from a GitHub repository through MCP, and apply a consistent design.
 
 This block demonstrates two things:
-1. How a **skill** changes agent behavior — the `zava-designer` skill loads automatically and tells the agent which sources to retrieve and which rules to follow
-2. How **GitHub-grounded design** produces consistent, brand-aligned results rather than the agent improvising a visual style
+1. How a **skill** changes Copilot's behavior automatically — without a custom agent or extra instructions from you
+2. How **GitHub-grounded design** produces consistent, brand-aligned results rather than Copilot improvising a visual style
 
 ---
 
@@ -34,16 +38,16 @@ The agent retrieves the exact tokens, layout rules, logo usage guidelines, and U
 
 ---
 
-## Step 1: Start the Design Agent
+## Step 1: Apply the Design
 
-1. Open **Copilot Chat** and switch to **Agent mode**
-2. Select the **4 Design Agent**
+1. Open **Copilot Chat** and confirm you are in **Agent mode**
+2. **Do not select a custom agent** — stay on the default agent. The skill fires on its own.
 3. Send this message:
 
    > "Apply the Zava design language to the app."
 
-The agent will:
-- Automatically activate the `zava-designer` skill
+Copilot will:
+- Automatically activate the `zava-designer` skill — watch for it appearing in the chat response
 - Retrieve color tokens, layout structure, UI patterns, and logo guidance from `Jfhelin/zava-design-guidelines` via GitHub MCP
 - Apply the design to the app files built in Block 3
 - **Not change** any functionality, data, or core workflows
@@ -134,9 +138,10 @@ Before you finish, make sure you can answer these:
 
 ## What You Learned in This Block
 
-- How a skill automatically changes agent behavior without the user having to specify every rule
-- How GitHub-grounded design produces consistent, brand-aligned output
-- The difference between an agent making visual decisions from training data vs. from a live source
+- What a **skill** is — a set of rules and retrieval instructions that Copilot activates automatically, without you selecting an agent or writing extra instructions
+- That skills fire based on the *type of request*, not because you asked for them — that is the design intent
+- How GitHub-grounded design produces consistent, brand-aligned output versus Copilot improvising from its training data
+- The difference between a skill (carries process and rules) and MCP (supplies live content) — and why separating them makes each independently auditable
 - How to verify a design pass without breaking the app underneath it
 
 ---

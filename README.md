@@ -19,9 +19,8 @@ This repository is the working space for the workshop. Open it in `VS Code`, use
 - [.github/agents/1-spec-agent.agent.md](.github/agents/1-spec-agent.agent.md): Block 1 — 1 Spec Agent
 - [.github/agents/2-spec-review-agent.agent.md](.github/agents/2-spec-review-agent.agent.md): Block 2 — 2 Spec Review Agent
 - [.github/agents/3-build-agent.agent.md](.github/agents/3-build-agent.agent.md): Block 3 — 3 Build Agent
-- [.github/agents/4-design-agent.agent.md](.github/agents/4-design-agent.agent.md): Block 4 — 4 Design Agent
+- [.github/skills/zava-designer/SKILL.md](.github/skills/zava-designer/SKILL.md): Block 4 — Zava design skill (fires automatically)
 - [.github/workshop/spec-templates/app-spec-template.md](.github/workshop/spec-templates/app-spec-template.md): spec structure
-- [.github/skills/zava-designer/SKILL.md](.github/skills/zava-designer/SKILL.md): design skill used in Block 4
 
 ## What Should Already Be Ready
 

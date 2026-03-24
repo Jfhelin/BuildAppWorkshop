@@ -9,7 +9,11 @@ Zava is the company-wide default design system. Apply it to **every** app, regar
 
 ## How This Skill Works
 
-This skill bundles the rules, retrieval map, and source authority for Zava design into one place. When the agent loads this skill it knows:
+This skill bundles the rules, retrieval map, and source authority for Zava design into one place.
+
+**This skill fires automatically.** You do not need to select a custom agent or invoke anything manually. Whenever Copilot detects UI work in Agent mode — building, styling, or improving any interface — this skill activates and shapes the response. That is the point: design decisions are grounded without you having to remember to ask.
+
+When this skill is active, Copilot knows:
 
 1. **What to apply** — the Zava visual rules and constraints below
 2. **Where to look** — the `Jfhelin/zava-design-guidelines` repository via GitHub MCP
@@ -43,8 +47,8 @@ The separation is intentional: the skill carries the *process*, GitHub MCP suppl
 | `brand/zava-ui-patterns.md` | Component patterns: cards, tables, forms, controls |
 | `brand/tokens.json` | Colors, radii, typography, spacing, borders, shadows |
 | `brand/logo-usage.md` | Logo placement rules and constraints |
-| `assets/logo-primary.png` | Canonical Zava logo — use this for all branding |
-| `assets/logo-preview.jpg` | Visual reference of the logo in context |
+| `assets/logo-primary.png` | Canonical Zava logo — reference by URL in the app, do not fetch the binary via MCP |
+| `assets/logo-preview.jpg` | Visual reference only — do not fetch via MCP |
 
 ### Published GitHub Issues
 
@@ -63,7 +67,7 @@ Use these sources depending on the task:
 - **Overall visual direction** — `brand/zava-style.md`, issue #1
 - **Layout structure** — `brand/page-structure.md`, `brand/zava-ui-patterns.md`, issue #5
 - **Colors, radii, typography, borders, shadows** — `brand/tokens.json`
-- **Logo placement and constraints** — `brand/logo-usage.md`, `assets/logo-primary.png`, issue #2
+- **Logo placement and constraints** — `brand/logo-usage.md`, issue #2 (do not fetch the PNG binary via MCP)
 - **Copy tone** — issue #3
 - **Guardrails and anti-patterns** — issue #4
 
@@ -74,7 +78,9 @@ Zava is always active. Load the relevant sources based on the type of work:
 - Building or scaffolding any new UI:
   - `brand/zava-style.md`, `brand/tokens.json`, `brand/page-structure.md`, `brand/zava-ui-patterns.md`, issues #1, #5
 - `add a logo`, `brand this`, `add branding`:
-  - `brand/logo-usage.md`, `assets/logo-primary.png`, issue #2
+  - `brand/logo-usage.md`, issue #2
+  - Use the logo by referencing its raw GitHub URL directly in the app's HTML/CSS: `https://raw.githubusercontent.com/Jfhelin/zava-design-guidelines/main/assets/logo-primary.png`
+  - Do not fetch the PNG file via GitHub MCP — passing binary image data to the model will fail
 - `improve the header`, `fix the top of the page`:
   - `brand/page-structure.md`, `brand/tokens.json`, `brand/logo-usage.md`, issue #5
 - `improve the footer`:
@@ -99,12 +105,12 @@ Zava is always active. Load the relevant sources based on the type of work:
 
 ## Logo Behavior
 
-- Always retrieve `brand/logo-usage.md` and `assets/logo-primary.png` from `Jfhelin/zava-design-guidelines` before placing a logo
-- Place the primary logo in the page header by default unless guidance says otherwise
+- Retrieve `brand/logo-usage.md` from `Jfhelin/zava-design-guidelines` and read issue #2 before placing a logo
+- **Do not fetch `assets/logo-primary.png` via GitHub MCP** — binary image files cannot be passed to the model and will cause a 400 error
+- Reference the logo in the app using its raw GitHub URL: `https://raw.githubusercontent.com/Jfhelin/zava-design-guidelines/main/assets/logo-primary.png`
+- Place an `<img>` tag with that URL in the page header by default unless guidance says otherwise
 - Do not recolor, distort, or create custom variants of the logo
-- If the asset cannot be retrieved, explain that and fall back to a text wordmark only
-- white cards on a light background
-- structured multi-column footer with accent-colored headings and muted links
+- If the URL is unreachable at runtime, fall back to a text wordmark only
 
 ## Decision Rule
 
@@ -118,7 +124,7 @@ Zava is always active. Load the relevant sources based on the type of work:
 
 ## Expected Output
 
-- Explain which files or issues from `Jfhelin/zava-design-guidelines` informed the design
-- State that GitHub MCP was used for brand grounding
-- Explain whether branding, logo placement, or layout rules were applied
-- Keep the resulting UI practical and demo-ready
+- **Skill constraints applied** — which rules from the `zava-designer` skill shaped the output
+- **Files retrieved via GitHub MCP** — which files from `Jfhelin/zava-design-guidelines` were used and what they contributed
+- **Issues retrieved via GitHub MCP** — which issues influenced decisions and what guidance they provided
+- **Visual changes made** — what specifically changed in the app and why

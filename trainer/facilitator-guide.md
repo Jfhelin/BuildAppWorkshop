@@ -65,25 +65,27 @@ Participant action:
 Debrief:
 - ask how the build output changes when the agent grounds itself in docs instead of guessing
 
-### Block 4: 4 Design Agent with Skill and GitHub Grounding
+### Block 4: Zava Design Skill with GitHub Grounding
 
 Trainer intro:
-- a skill controls agent behavior
-- MCP gives the agent trusted design and brand context
+- a skill fires automatically — the participant does not select an agent or mention Zava
+- the moment Copilot sees a UI request, the `zava-designer` skill activates
+- MCP gives Copilot trusted design and brand context from a live GitHub repository
 - the design phase should improve the interface without rewriting the product
 - Zava styling is grounded from a separate GitHub repository, not this workshop repo
 
 Participant action:
-- run [.github/agents/4-design-agent.agent.md](../.github/agents/4-design-agent.agent.md)
-- have the design agent use the preinstalled `zava-designer` skill
-- have the design agent retrieve files and issues from `Jfhelin/zava-design-guidelines` through GitHub MCP
+- stay in default Agent mode — no custom agent to select
+- send a plain prompt: "Apply the Zava design language to the app."
+- watch the `zava-designer` skill activate automatically in the chat response
+- have Copilot retrieve files and issues from `Jfhelin/zava-design-guidelines` through GitHub MCP
 
 Debrief:
-- ask what came from the skill versus what came from GitHub context
+- ask what came from the skill versus what came from GitHub MCP content
 - emphasize the separation:
-  - skill shapes behavior
-  - MCP supplies source material
-  - agent executes the role
+  - skill shapes behavior and carries the rules
+  - MCP supplies live source material
+  - the model executes — no custom agent needed
 
 ## Recommended App Categories
 

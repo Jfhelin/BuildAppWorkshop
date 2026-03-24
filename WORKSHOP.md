@@ -34,8 +34,7 @@ The app will be grounded in realistic sample data, built from a clear spec, and 
 Confirm each of these before opening Block 1:
 
 - [ ] GitHub Copilot is enabled in VS Code
-- [ ] `GitHub MCP` is configured and connected
-- [ ] `Microsoft Learn MCP` is configured and connected
+- [ ] **MCP servers are started** — open the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`), scroll to **MCP SERVERS - INSTALLED**, and confirm both `github` and `microsoft-learn` show a green running indicator. If they are stopped, click the start button next to each. VS Code will prompt you to trust each server the first time — select **Trust**.
 - [ ] The `zava-designer` skill is visible in Copilot chat (type `/` to check)
 - [ ] **Model is set to Claude Sonnet 4.6** — open Copilot Chat, click the model picker at the bottom of the chat panel, and select **Claude Sonnet 4.6** before starting Block 1
 
