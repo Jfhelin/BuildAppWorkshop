@@ -21,7 +21,7 @@ Teach ATS how to explain and demonstrate `agents`, `spec quality`, `model select
 - The point is to show how Copilot gets better when work is structured.
 - Each block adds one capability to the flow rather than starting from scratch.
 
-### Block 1: Spec Agent
+### Block 1: 1 Spec Agent
 
 Trainer intro:
 - introduce role-based agents
@@ -29,43 +29,43 @@ Trainer intro:
 - keep participants on small app ideas
 
 Participant action:
-- open [.github/workshop/agents/spec-agent.md](../.github/workshop/agents/spec-agent.md)
-- create `spec-v1.md` using their chosen app idea
+- open [.github/agents/1-spec-agent.agent.md](../.github/agents/1-spec-agent.agent.md)
+- create `app-spec.md` using their chosen app idea
 
 Debrief:
 - show how strong specs include target users, workflows, constraints, and non-goals
 - point out that the spec agent does not use MCP yet
 
-### Block 2: Spec Review Agent
+### Block 2: 2 Spec Review Agent
 
 Trainer intro:
 - different models are good at different jobs
 - review work is one of the easiest places to compare models side by side
 
 Participant action:
-- run [.github/workshop/agents/spec-review-agent.md](../.github/workshop/agents/spec-review-agent.md) twice with two models
+- run [.github/agents/2-spec-review-agent.agent.md](../.github/agents/2-spec-review-agent.agent.md) twice with two models
 - save outputs as `spec-review-a.md` and `spec-review-b.md`
-- produce `spec-v2.md`
+- apply the top fixes from the stronger review to `app-spec.md` in place
 
 Debrief:
 - ask which model produced better critique and why
 - reinforce that the best model depends on the task
 
-### Block 3: Build Agent with Learn MCP
+### Block 3: 3 Build Agent with Learn MCP
 
 Trainer intro:
 - MCP is authoring-time grounding, not runtime app integration
 - the build agent should consult trusted platform guidance before implementation
 
 Participant action:
-- run [.github/workshop/agents/build-agent.md](../.github/workshop/agents/build-agent.md)
+- run [.github/agents/3-build-agent.agent.md](../.github/agents/3-build-agent.agent.md)
 - require the build agent to consult Microsoft Learn MCP before making implementation choices
 - keep design minimal in this stage
 
 Debrief:
 - ask how the build output changes when the agent grounds itself in docs instead of guessing
 
-### Block 4: Design Agent with Skill and GitHub Grounding
+### Block 4: 4 Design Agent with Skill and GitHub Grounding
 
 Trainer intro:
 - a skill controls agent behavior
@@ -74,9 +74,9 @@ Trainer intro:
 - Zava styling is grounded from a separate GitHub repository, not this workshop repo
 
 Participant action:
-- run [.github/workshop/agents/design-agent.md](../.github/workshop/agents/design-agent.md)
+- run [.github/agents/4-design-agent.agent.md](../.github/agents/4-design-agent.agent.md)
 - have the design agent use the preinstalled `zava-designer` skill
-- have the design agent retrieve files and issues from `jhelin/designguidelines` through GitHub MCP
+- have the design agent retrieve files and issues from `Jfhelin/zava-design-guidelines` through GitHub MCP
 
 Debrief:
 - ask what came from the skill versus what came from GitHub context
@@ -98,7 +98,7 @@ Debrief:
 - publish the issue seeds from [github-issues](github-issues) into GitHub
 - create and publish the separate design repo from [designguidelines-repo-template](designguidelines-repo-template)
 - confirm the design skill is installed in the participant environment
-- confirm GitHub MCP can reach `jhelin/designguidelines`
+- confirm GitHub MCP can reach `Jfhelin/zava-design-guidelines`
 - dry-run the lab once in a clean environment
 
 ## ATS Wrap-Up Narrative

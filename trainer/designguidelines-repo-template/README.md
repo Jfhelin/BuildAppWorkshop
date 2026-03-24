@@ -1,6 +1,8 @@
 # designguidelines
 
-This folder is a scaffold for the separate public GitHub repository `github.com/jhelin/designguidelines`.
+This folder is a scaffold template for the design guidelines repository used in Block 4.
+
+The published version of this repository is at `github.com/Jfhelin/zava-design-guidelines`.
 
 Purpose:
 
@@ -12,19 +14,25 @@ This repository is intended to be the source of truth for the workshop-defined Z
 
 ## Repository Structure
 
+The live repository contains:
+
 - `README.md`
 - `brand/zava-style.md`
 - `brand/zava-ui-patterns.md`
 - `brand/logo-usage.md`
+- `brand/page-structure.md`
 - `brand/tokens.json`
-- `assets/logo-primary.svg`
-- `assets/logo-mark.svg`
-- `assets/hero-01.svg`
+- `assets/logo-primary.png`
+- `assets/logo-preview.jpg`
 - `assets/logo-preview.md`
-- `issues/seed/01-zava-design-guidance.md`
-- `issues/seed/02-zava-logo-usage.md`
-- `issues/seed/03-zava-copy-tone.md`
-- `issues/seed/04-zava-do-not-do.md`
+
+GitHub issues #1–#5 are already published in the live repo:
+
+- #1 Zava Design Guidance
+- #2 Zava Logo Usage
+- #3 Zava Copy Tone
+- #4 Zava Design Do Not Do
+- #5 Zava Layout Blocks
 
 ## How This Repo Is Used In The Workshop
 
@@ -45,8 +53,7 @@ This repository defines Zava in a way that matches the provided workshop referen
 
 ## Publish Steps
 
-1. Create `github.com/jhelin/designguidelines`
-2. Copy the contents of this scaffold into that repository
-3. Add the real approved Zava assets
-4. Publish the seed issue files as GitHub issues
-5. Confirm GitHub MCP can read both files and issues from the repo
+1. Confirm `Jfhelin/zava-design-guidelines` is accessible via GitHub MCP
+2. Confirm issues #1–#5 are published and readable via GitHub MCP
+3. Confirm `assets/logo-primary.png` is retrievable
+4. Confirm GitHub MCP can read both files and issues from the repo

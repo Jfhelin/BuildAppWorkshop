@@ -12,10 +12,10 @@ This repository is the working space for the workshop. Open it in `VS Code`, use
 ## What You Will Use
 
 - [WORKSHOP.md](WORKSHOP.md): step-by-step participant guide
-- [.github/workshop/agents/spec-agent.md](.github/workshop/agents/spec-agent.md): Block 1 prompt
-- [.github/workshop/agents/spec-review-agent.md](.github/workshop/agents/spec-review-agent.md): Block 2 prompt
-- [.github/workshop/agents/build-agent.md](.github/workshop/agents/build-agent.md): Block 3 prompt
-- [.github/workshop/agents/design-agent.md](.github/workshop/agents/design-agent.md): Block 4 prompt
+- [.github/agents/1-spec-agent.agent.md](.github/agents/1-spec-agent.agent.md): Block 1 — 1 Spec Agent
+- [.github/agents/2-spec-review-agent.agent.md](.github/agents/2-spec-review-agent.agent.md): Block 2 — 2 Spec Review Agent
+- [.github/agents/3-build-agent.agent.md](.github/agents/3-build-agent.agent.md): Block 3 — 3 Build Agent
+- [.github/agents/4-design-agent.agent.md](.github/agents/4-design-agent.agent.md): Block 4 — 4 Design Agent
 - [.github/workshop/spec-templates/app-spec-template.md](.github/workshop/spec-templates/app-spec-template.md): spec structure
 - [.github/skills/zava-designer/SKILL.md](.github/skills/zava-designer/SKILL.md): design skill used in Block 4
 
@@ -28,7 +28,7 @@ Your workshop environment should already have:
 - `Microsoft Learn MCP`
 - `GitHub MCP`
 - the `zava-designer` skill installed and available from the start
-- access through GitHub MCP to `github.com/jhelin/designguidelines`
+- access through GitHub MCP to `github.com/Jfhelin/zava-design-guidelines`
 
 If any of those are missing, ask the trainer before starting the blocks.
 
@@ -36,10 +36,9 @@ If any of those are missing, ask the trainer before starting the blocks.
 
 Create these in the repo root during the workshop:
 
-- `spec-v1.md`
+- `app-spec.md`
 - `spec-review-a.md`
 - `spec-review-b.md`
-- `spec-v2.md`
 
 ## Workshop Goal
 

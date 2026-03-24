@@ -1,104 +1,56 @@
 # Workshop Guide
 
-This guide is the participant walkthrough. Work through the four blocks in order and build directly in this repository.
+Welcome to the **Build App Workshop**. In this session you will plan, build, and polish a working web app entirely inside this repository — using GitHub Copilot agents, MCP connections, and the Zava design skill.
+
+You do not need prior coding experience. Copilot does the heavy lifting. Your job is to describe what you want, review what comes back, and keep refining until it is right.
+
+---
+
+## What You Will Build
+
+A small, fully local web app that runs in your browser. No server, no login, no infrastructure. Just open a file and it works.
+
+The app will be grounded in realistic sample data, built from a clear spec, and styled to the Zava design language — all in about 90 minutes.
+
+---
+
+## What You Will Learn
+
+| Block | Skill |
+|-------|-------|
+| [Block 1: Spec](WORKSHOP-BLOCK-1.md) | How to describe an app idea clearly and iterate on a spec with an agent |
+| [Block 2: Spec Review](WORKSHOP-BLOCK-2.md) | How different models approach the same problem differently — and why that matters |
+| [Block 3: Build](WORKSHOP-BLOCK-3.md) | How agents use external documentation (MCP) to make better technical decisions |
+| [Block 4: Design](WORKSHOP-BLOCK-4.md) | How a design skill automatically applies a consistent visual language |
+
+---
 
 ## Before You Start
 
-- Confirm you can use GitHub Copilot in VS Code
-- Confirm Copilot CLI is available
-- Confirm `Microsoft Learn MCP` and `GitHub MCP` are already configured
-- Confirm the `zava-designer` skill is available in your environment
-- Confirm GitHub MCP can reach `jhelin/designguidelines`
-- Pick a small app idea:
-  - internal tool
-  - dashboard
-  - form-based workflow
-  - lightweight tracker
+Confirm each of these before opening Block 1:
 
-Keep your app small enough for a 90-minute prototype. Avoid auth, payments, and complex backend work.
+- [ ] GitHub Copilot is enabled in VS Code
+- [ ] `GitHub MCP` is configured and connected
+- [ ] `Microsoft Learn MCP` is configured and connected
+- [ ] The `zava-designer` skill is visible in Copilot chat (type `/` to check)
+- [ ] **Model is set to Claude Sonnet 4.6** — open Copilot Chat, click the model picker at the bottom of the chat panel, and select **Claude Sonnet 4.6** before starting Block 1
 
-## Files You Will Produce
+If any of these are missing, ask your facilitator before continuing.
 
-- `spec-v1.md`
-- `spec-review-a.md`
-- `spec-review-b.md`
-- `spec-v2.md`
+---
 
-Use [.github/workshop/spec-templates/app-spec-template.md](.github/workshop/spec-templates/app-spec-template.md) as your spec shape.
+## Ground Rules
 
-## Block 1: Spec Agent
+These apply across all four blocks:
 
-Goal: turn your idea into a clear draft spec.
+- **No auth.** The app will not have login screens or user accounts.
+- **No backend.** Everything runs in the browser — no server to spin up, no database to configure.
+- **No external APIs at runtime.** All data is local or bundled. Nothing requires network access to demo.
+- **Stay in the repo.** Create and edit files directly in this repository.
+- **Keep it demoable.** If it cannot be shown in 90 minutes, it is out of scope.
 
-1. Open [.github/workshop/agents/spec-agent.md](.github/workshop/agents/spec-agent.md)
-2. Replace the placeholder idea with your own
-3. Run the prompt with the `Spec Agent`
-4. Save the output as `spec-v1.md`
+---
 
-What to look for:
+## Start Here
 
-- clear target user
-- clear workflow
-- realistic scope
-- explicit non-goals
-
-## Block 2: Spec Review Agent
-
-Goal: compare two models doing the same review task.
-
-1. Open [.github/workshop/agents/spec-review-agent.md](.github/workshop/agents/spec-review-agent.md)
-2. Run the exact same prompt twice with two different models
-3. Save the outputs as `spec-review-a.md` and `spec-review-b.md`
-4. Compare the reviews
-5. Create `spec-v2.md` using the stronger review
-
-What to look for:
-
-- which model finds more useful gaps
-- which model is clearer and more actionable
-- which model overcomplicates the app
-
-## Block 3: Build Agent
-
-Goal: build a working first version with Microsoft Learn MCP grounding.
-
-1. Open [.github/workshop/agents/build-agent.md](.github/workshop/agents/build-agent.md)
-2. Point the agent at `spec-v2.md`
-3. Tell the agent to create the app directly in this repository
-4. Require it to consult `Microsoft Learn MCP` before making implementation choices
-5. Keep the result functional and intentionally simple
-
-What to look for:
-
-- how the agent uses docs to guide technical choices
-- whether the app stays aligned to the reviewed spec
-- whether the app is demoable without extra setup
-
-## Block 4: Design Agent
-
-Goal: improve clarity and polish without changing the product scope.
-
-1. Open [.github/workshop/agents/design-agent.md](.github/workshop/agents/design-agent.md)
-2. Tell the agent to use the `zava-designer` skill
-3. Ask it to retrieve Zava design guidance from `jhelin/designguidelines` through GitHub MCP
-4. Ask it to use:
-   - design rules from the external brand repo
-   - approved logo or asset files from the external brand repo
-   - any supporting design guidance issues in the external brand repo
-4. Apply the changes in the app files created during Block 3
-
-What to look for:
-
-- what changed because of the skill
-- what changed because of GitHub-grounded design context from `jhelin/designguidelines`
-- whether the UI improved without changing app scope
-
-## End Of Workshop Check
-
-By the end, you should be able to explain:
-
-- why the spec step matters
-- why model choice matters
-- how MCP improves authoring-time grounding
-- how a skill changes agent behavior
-- why different agents are useful for different jobs
+Open [WORKSHOP-BLOCK-1.md](WORKSHOP-BLOCK-1.md) and begin.
