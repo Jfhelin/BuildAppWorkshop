@@ -25,14 +25,20 @@ The Spec Review Agent finds these problems *before* the Build Agent runs into th
 
 ## Step 1: Run the Review With Your First Model
 
-1. Open **Copilot Chat** and switch to **Agent mode**
-2. Select the **2 Spec Review Agent**
-3. Send this message:
+### What is a reusable prompt?
 
-   > "Review app-spec.md and produce a critique."
+In Block 1, you used a **custom agent** — a fully configured assistant with its own name, tools, and role. Agents are powerful, but sometimes you just need to **replay a well-crafted prompt** without spinning up a whole persona. That is what **reusable prompts** are for.
 
-4. The agent will review `app-spec.md` using a structured rubric and produce a report
-5. When it finishes, **review the output `spec-review-<model-used>.md`**
+A reusable prompt is a `.prompt.md` file stored in `.github/prompts/`. It contains a pre-written prompt — complete with instructions, rubrics, or output formats — that you can invoke in Copilot Chat with a single click instead of typing it from scratch every time. Think of it as a saved command you can reuse across conversations, models, and team members.
+
+> Want to see how it works? Open [`.github/prompts/spec-review.prompt.md`](.github/prompts/spec-review.prompt.md) to read its contents. You can also read more about reusable prompts in the [VS Code documentation](https://code.visualstudio.com/docs/copilot/customization/prompt-files).
+
+### Run the review
+
+1. Open **Copilot Chat** in VS Code and switch to **Agent mode**
+2. In the chat input, type `/` and select **spec-review** from the prompt picker
+3. Press **Enter** to send the prompt — it will run the full review rubric automatically
+4. When it finishes, **review the output `spec-review-<model-used>.md`**
 
 
 ---
@@ -43,9 +49,7 @@ The Spec Review Agent finds these problems *before* the Build Agent runs into th
    - **Google Gemini** (e.g. Gemini 2.5 Pro) — strong at structured analysis and spotting scope creep
    - **OpenAI GPT-5.4** — well-rounded; tends to be thorough on acceptance criteria gaps
    - Any other model available in the picker you have not used yet
-2. Send the exact same message again:
-
-   > "Review app-spec.md and produce a critique."
+2. In the chat input, type `/` and select **spec-review** again, then press **Enter** to send the prompt
 
 
 ---
