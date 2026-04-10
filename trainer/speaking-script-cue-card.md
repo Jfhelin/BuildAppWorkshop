@@ -34,7 +34,9 @@
 ## Block 2
 
 - Open [WORKSHOP-BLOCK-2.md](../WORKSHOP-BLOCK-2.md).
-- Run the 2 Spec Review Agent twice with two models.
+- In Copilot Chat, type `/` and run the `spec-review` reusable prompt twice with two models.
+- The prompt lives in `.github/prompts/spec-review.prompt.md`.
+- Keep the model-specific output files, for example `spec-review-gpt-5.4.md`.
 - Compare specificity, blockers, and hallucinations.
 - Apply the best fixes back to `app-spec.md`.
 - Debrief: which model was better for review, and why.

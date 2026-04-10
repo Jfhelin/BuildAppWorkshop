@@ -77,9 +77,12 @@ Note that this agent is not using MCP yet. At this stage, this is just structure
 In this block, your job is to stress-test the spec before you build anything.
 
 Open [WORKSHOP-BLOCK-2.md](../WORKSHOP-BLOCK-2.md).
-Run the 2 Spec Review Agent twice with two different models.
+In Copilot Chat, type `/` and run the `spec-review` reusable prompt twice with two different models.
 Compare the two critiques.
 Then apply the best fixes back into `app-spec.md`.
+
+The reusable prompt lives in `.github/prompts/spec-review.prompt.md`.
+Each run should save its output as `spec-review-<model-name>.md` so participants can compare them side by side.
 
 Do not just count how many issues each model found.
 

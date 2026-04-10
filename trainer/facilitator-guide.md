@@ -36,15 +36,17 @@ Debrief:
 - show how strong specs include target users, workflows, constraints, and non-goals
 - point out that the spec agent does not use MCP yet
 
-### Block 2: 2 Spec Review Agent
+### Block 2: Reusable Prompt Review
 
 Trainer intro:
 - different models are good at different jobs
 - review work is one of the easiest places to compare models side by side
+- reusable prompts are a lightweight way to run a fixed review workflow without switching to a custom agent
 
 Participant action:
-- run [.github/agents/2-spec-review-agent.agent.md](../.github/agents/2-spec-review-agent.agent.md) twice with two models
-- save outputs as `spec-review-a.md` and `spec-review-b.md`
+- open [`.github/prompts/spec-review.prompt.md`](../.github/prompts/spec-review.prompt.md)
+- in Copilot Chat, type `/` and run `spec-review` twice with two different models
+- keep the model-named outputs, such as `spec-review-gpt-5.4.md` and `spec-review-gemini-2.5-pro.md`
 - apply the top fixes from the stronger review to `app-spec.md` in place
 
 Debrief:
