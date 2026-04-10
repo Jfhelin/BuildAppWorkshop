@@ -11,6 +11,16 @@ You do not need prior coding experience. Copilot does the heavy lifting. Your jo
 
 ---
 
+## If You Have Not Cloned the Repo Yet
+
+If you are starting from a clean VS Code window and do not have this repository open yet, open **Copilot Chat** and ask:
+
+> "Clone the [BuildAppWorkshop](https://github.com/Jfhelin/BuildAppWorkshop) repository and open it in VS Code."
+
+Let Copilot help you through that setup rather than memorizing git commands. Once the repository is open, continue with the rest of this guide.
+
+---
+
 ## What You Will Build
 
 A small, fully local web app that runs in your browser. No server, no login, no infrastructure. Just open a file and it works.
@@ -37,7 +47,6 @@ Confirm each of these before opening Block 1:
 - [ ] GitHub Copilot is enabled in VS Code
 - [ ] You can open Copilot Chat in VS Code
 - [ ] The BuildAppWorkshop repository is open in VS Code
-- [ ] If the repository is not open yet, ask Copilot Chat to clone the [BuildAppWorkshop](https://github.com/Jfhelin/BuildAppWorkshop) repository and open it for you
 
 If any of these are missing, ask your facilitator before continuing.
 
