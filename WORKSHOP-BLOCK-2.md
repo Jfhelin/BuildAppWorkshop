@@ -1,4 +1,4 @@
-# Block 2: Spec Review Agent
+# Block 2: Reusable Prompt Review
 
 > **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width. You can also right-click the editor tab and choose `Open Preview`.
 
@@ -19,7 +19,7 @@ A spec that seems clear to you may be deeply ambiguous to a build agent. Common 
 - Constraints live in your head but not on the page
 - Scope is too broad to build in 90 minutes
 
-The Spec Review Agent finds these problems *before* the Build Agent runs into them. It is cheaper to fix a spec than to fix half-built code.
+The reusable spec-review prompt finds these problems *before* the Build Agent runs into them. It is cheaper to fix a spec than to fix half-built code.
 
 ---
 
@@ -35,7 +35,7 @@ A reusable prompt is a `.prompt.md` file stored in `.github/prompts/`. It contai
 
 ### Run the review
 
-1. Open **Copilot Chat** in VS Code and switch to **Agent mode**
+1. Open **Copilot Chat** in VS Code and stay in **Agent mode**
 2. In the chat input, type `/` and select **spec-review** from the prompt picker
 3. Press **Enter** to send the prompt — it will run the full review rubric automatically
 4. When it finishes, **review the output `spec-review-<model-used>.md`**
@@ -75,7 +75,7 @@ There is no universally "better" model. What you are learning is that **model ch
 
 Use the stronger of the two reviews (or the best parts of both) to update the spec in place.
 
-1. Still in the **2 Spec Review Agent**, send a follow-up message:
+1. Stay in the same Copilot Chat thread and send a follow-up message:
 
    > "Using the findings from the review, apply the top fixes to app-spec.md and update it in place."
 
@@ -92,7 +92,7 @@ Use the stronger of the two reviews (or the best parts of both) to update the sp
 
 ## What You Learned in This Block
 
-- The core Copilot workflow repeated: **Copilot does the work → you review the output → you ask Copilot to fix it**. You did not edit `app-spec.md` directly — you described what needed to change and let the agent apply it. That pattern is the same whether you are writing a spec, reviewing code, or styling an app.
+- The core Copilot workflow repeated: **Copilot does the work → you review the output → you ask Copilot to fix it**. You did not edit `app-spec.md` directly — you described what needed to change and let Copilot apply it. That pattern is the same whether you are writing a spec, reviewing code, or styling an app.
 - That **model choice is a real decision**. The same prompt sent to two different models produces different findings, different prioritisation, and different blind spots. Choosing a model is not a preference — it changes the output in ways that matter.
 
 ---

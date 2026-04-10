@@ -5,7 +5,7 @@
 > The preview opens as a split panel — drag its tab to the centre of the screen to make it full-width.
 > You can also right-click the editor tab and choose `Open Preview`.
 
-This repository is the working space for the workshop. Open it in `VS Code`, use the included agents and skill, and build your app directly here.
+This repository is the working space for the workshop. Open it in `VS Code`, use the included agents, prompt, and skill, and build your app directly here.
 
 ## Start Here
 
@@ -18,7 +18,7 @@ This repository is the working space for the workshop. Open it in `VS Code`, use
 
 - [WORKSHOP.md](WORKSHOP.md): step-by-step participant guide
 - [.github/agents/1-spec-agent.agent.md](.github/agents/1-spec-agent.agent.md): Block 1 — 1 Spec Agent
-- [.github/agents/2-spec-review-agent.agent.md](.github/agents/2-spec-review-agent.agent.md): Block 2 — 2 Spec Review Agent
+- [.github/prompts/spec-review.prompt.md](.github/prompts/spec-review.prompt.md): Block 2 — reusable prompt review
 - [.github/agents/3-build-agent.agent.md](.github/agents/3-build-agent.agent.md): Block 3 — 3 Build Agent
 - [.github/skills/zava-designer/SKILL.md](.github/skills/zava-designer/SKILL.md): Block 4 — Zava design skill (fires automatically)
 - [.github/workshop/spec-templates/app-spec-template.md](.github/workshop/spec-templates/app-spec-template.md): spec structure
@@ -31,7 +31,7 @@ If that is missing, ask the trainer before starting the blocks.
 
 ## Workshop Goal
 
-Use one continuous flow to learn how `agents`, `spec quality`, `model selection`, `MCP grounding`, and `skills` change the way GitHub Copilot helps you build.
+Use one continuous flow to learn how `agents`, `reusable prompts`, `spec quality`, `model selection`, `MCP grounding`, and `skills` change the way GitHub Copilot helps you build.
 
 ## Ready to Begin?
 

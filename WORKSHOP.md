@@ -5,7 +5,7 @@
 > The preview opens as a split panel — drag its tab to the centre of the screen to make it full-width.
 > You can also right-click the editor tab and choose `Open Preview`.
 
-Welcome to the **Build App Workshop**. In this session you will plan, build, and polish a working web app entirely inside this repository — using GitHub Copilot agents, MCP connections, and the Zava design skill.
+Welcome to the **Build App Workshop**. In this session you will plan, build, and polish a working web app entirely inside this repository — using GitHub Copilot agents, reusable prompts, MCP connections, and the Zava design skill.
 
 You do not need prior coding experience. Copilot does the heavy lifting. Your job is to describe what you want, review what comes back, and keep refining until it is right.
 
@@ -34,7 +34,7 @@ The app will be grounded in realistic sample data, built from a clear spec, and 
 | Block | Skill |
 |-------|-------|
 | [Block 1: Spec](WORKSHOP-BLOCK-1.md) | How to describe an app idea clearly and iterate on a spec with an agent |
-| [Block 2: Spec Review](WORKSHOP-BLOCK-2.md) | How different models approach the same problem differently — and why that matters |
+| [Block 2: Reusable Prompt Review](WORKSHOP-BLOCK-2.md) | How reusable prompts let you compare different models using the same review rubric |
 | [Block 3: Build](WORKSHOP-BLOCK-3.md) | How agents use external documentation (MCP) to make better technical decisions |
 | [Block 4: Design](WORKSHOP-BLOCK-4.md) | How a design skill automatically applies a consistent visual language |
 

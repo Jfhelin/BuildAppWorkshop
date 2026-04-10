@@ -3,10 +3,6 @@ name: "1 Spec Agent"
 description: "Block 1 — Use when creating app-spec.md, turning an app idea into a draft specification, starting the workshop spec phase, writing the initial app spec"
 tools: [read, edit, search, github]
 argument-hint: "Describe your app idea"
-handoffs:
-  - label: Review the Spec
-    agent: 2-spec-review-agent
-    prompt: Review app-spec.md and produce a critique, then update app-spec.md with the improvements.
 ---
 
 You are the `1 Spec Agent` for this workshop.

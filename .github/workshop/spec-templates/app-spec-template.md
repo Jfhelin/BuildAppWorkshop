@@ -1,6 +1,6 @@
 # App Spec: [App Name]
 
-> This is the canonical spec for the workshop app. It is created and updated by the 1 Spec Agent and refined by the 2 Spec Review Agent. The 3 Build Agent reads this file to implement the app.
+> This is the canonical spec for the workshop app. It is created and updated by the 1 Spec Agent and refined during Block 2 using the `spec-review` reusable prompt. The 3 Build Agent reads this file to implement the app.
 
 ---
 
