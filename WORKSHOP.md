@@ -3,6 +3,7 @@
 > **Reading this in VS Code?** Open this file in Markdown preview for the best experience.
 > Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux).
 > The preview opens as a split panel — drag its tab to the centre of the screen to make it full-width.
+> You can also right-click the editor tab and choose `Open Preview`.
 
 Welcome to the **Build App Workshop**. In this session you will plan, build, and polish a working web app entirely inside this repository — using GitHub Copilot agents, MCP connections, and the Zava design skill.
 

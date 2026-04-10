@@ -1,6 +1,6 @@
 # Block 2: Spec Review Agent
 
-> **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width.
+> **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width. You can also right-click the editor tab and choose `Open Preview`.
 
 **Goal:** Stress-test your spec before building. Find the gaps, ambiguities, and risks that would slow down or break the build — and apply the fixes directly to `app-spec.md` before handing it to the Build Agent.
 

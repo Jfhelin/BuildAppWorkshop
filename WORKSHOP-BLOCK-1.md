@@ -1,6 +1,6 @@
 # Block 1: Spec Agent
 
-> **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width.
+> **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width. You can also right-click the editor tab and choose `Open Preview`.
 
 **Goal:** Turn your app idea into a clear, reviewed draft spec that is ready for a build agent.
 

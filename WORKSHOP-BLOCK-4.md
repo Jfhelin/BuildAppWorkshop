@@ -1,6 +1,6 @@
 # Block 4: Zava Design Skill
 
-> **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width.
+> **Reading this in VS Code?** Press `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows / Linux) to open Markdown preview. Drag the preview tab to the centre of the screen to view it full-width. You can also right-click the editor tab and choose `Open Preview`.
 
 **Goal:** Apply the Zava design language to your app — grounded in real brand guidance retrieved from a GitHub repository — without changing anything about how the app works.
 
