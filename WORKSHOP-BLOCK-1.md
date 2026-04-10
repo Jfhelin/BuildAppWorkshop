@@ -10,6 +10,16 @@ Estimated time: **15–20 minutes**
 
 ---
 
+## If You Have Not Cloned the Repo Yet
+
+If you are starting from a clean VS Code window and do not have this repository open yet, open **Copilot Chat** and ask:
+
+> "Clone the [BuildAppWorkshop](https://github.com/Jfhelin/BuildAppWorkshop) repository and open it in VS Code."
+
+Let Copilot help you through that setup rather than memorizing git commands. Once the repository is open, come back to this file and continue.
+
+---
+
 ## Step 1: Pick a Good Idea
 
 Your app needs to be small, local, and concrete. Avoid anything that naturally requires a login, a database, or an external service. If explaining it requires the phrase "and then it connects to...", simplify the idea first.
